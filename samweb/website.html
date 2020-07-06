@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <i class="fa fa-heart-o" aria-hidden="true" id="logo"><i>  Hello</i></i>
+        <div class="menu">
+            <ol class="main">
+               <a href="#"><i class="fa fa-home" aria-hidden="true" id="icn" checked><i>Home</i></i></a>
+               <li><a href="#"><i class="fa fa-cloud" aria-hidden="true" id="icn"><i>Service</i></i></a>
+                <ol>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Watch</a></li>
+                </ol>
+            </li>
+               <a href="about.html"><i class="fa fa-pie-chart" aria-hidden="true" id="icn"><i>About</i></i></a>
+            </ol>
+        </div>
+        <div class="pro">
+            <ol>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+            </ol>
+        </div>
+        <div class="reviw">
+            <ol class="msg">
+                <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"><i>Comment</i></i></a>
+                <ol>
+                    <li><input type="text" placeholder="Comment" name="comment"/></li>
+                    <li><input type="submit"/></li>
+                </ol>
+                </li>
+                <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"><i>Message</i></i></a>
+                <ol>
+                    <li><input type="text" placeholder="Message" name="message"/></li>
+                    <li><input type="submit"/></li>
+                </ol>
+            </li>
+            </ol>
+        </div>
+        <div class="set">
+            <ol>
+                <li><a href="#" id="cog"><i class="fa fa-cogs" aria-hidden="true"><i>Setting </i></i></a>
+                    <ol>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ol>
+                </li>
+                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"><i>Share</i></i></a>
+                    <ol>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div class="para">
+            <p>Hello Everyone...!! Welcome to my Website. Here you can find lot of things as per your flavor and wish.This is my first html and css project
+            <br> click here to learn more:<a href="learnmore.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+            </p>
+        </div>
+        <style>
+            body{
+    background-color: royalblue;
+    padding: 1px;
+    margin: 2px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: 'Crimson Text', serif;
+}
+.main{
+    display: flex;
+    position: absolute;
+    top:10%;
+    left:5%;
+    border:white solid 0px;
+    padding:15px;
+    margin:5px;
+}
+#icn{
+    padding: 1px;
+    margin: 0px 7px;
+}
+.pro{
+     position: absolute;
+     top:10%;
+     right:5%;
+     border:white solid 0px;
+     padding:15px;
+     margin: 5px;
+}
+a{
+    color:white;
+    text-decoration: none;
+    border: white solid 0.5px;
+    padding: 4px 4px;
+    margin: 2px;
+    border-radius: 10px;
+    border:none;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+    border: white solid 0.5px;
+    padding: 2px 4px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color:white;
+    transform: scale(1.1);
+}
+.reviw{
+    position: absolute;
+    left: 5%;
+    bottom:7%;
+}
+ol{
+    list-style: none;
+}
+.set{
+    position: absolute;
+    right:5%;
+    bottom:7%;
+}
+i{
+    padding: 5px;
+}
+p{
+    width:350px;
+    height:70px;
+    position: absolute;
+    left:40%;
+    top:40%;
+    border:white solid 0.1px;
+    background:linear-gradient(120deg,pink,lightgreen);
+    color:black;
+    padding:15px 5px;
+    border-radius:15px 15px 15px 0;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 1px;
+}
+#logo{
+    border:white solid 0.1px;
+    color:blue;
+    background-color: white;
+    border-radius:10px;
+    padding: 7px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+img{
+    width:270px;
+    height:400px;
+    position: absolute;
+    top:25%;
+    left:45%;
+    border-radius:30px 30px 30px 0;
+}
+ol li ol li{
+    display: none;
+}
+ol li:hover ol li{
+    display: flex;
+    display: block;
+}
+input[type="text"]{
+    outline:none;
+    background-color: transparent;
+    border: snow solid 0.5px;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 5px;
+    color: snow;
+}
+
+        </style>
+    </body>
+</html>
